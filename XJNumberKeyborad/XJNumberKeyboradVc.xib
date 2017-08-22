@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XJNumberKeyboradVc">
+            <connections>
+                <outlet property="numTextF" destination="LR7-Aq-HRn" id="iK7-6w-XbG"/>
+                <outlet property="numTextF1" destination="bsV-41-0kD" id="RbL-by-WcF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LR7-Aq-HRn">
+                    <rect key="frame" x="30" y="150" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.77220374349999998" green="0.22662359479999999" blue="0.41152623300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9Yb-ui-GV1"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pJj-M0-MwQ"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-41-0kD">
+                    <rect key="frame" x="30" y="205" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.77220374349999998" green="0.22662359479999999" blue="0.41152623300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nsJ-r5-IMW"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9JC-cy-R5V"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bsV-41-0kD" secondAttribute="trailing" constant="30" id="52g-Sz-Lh8"/>
+                <constraint firstItem="bsV-41-0kD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="B3e-vg-Lfp"/>
+                <constraint firstItem="bsV-41-0kD" firstAttribute="top" secondItem="LR7-Aq-HRn" secondAttribute="bottom" constant="15" id="KWV-G4-Xdw"/>
+                <constraint firstItem="LR7-Aq-HRn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="gOO-8l-079"/>
+                <constraint firstAttribute="trailing" secondItem="LR7-Aq-HRn" secondAttribute="trailing" constant="30" id="o9f-L9-Jxo"/>
+                <constraint firstItem="LR7-Aq-HRn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ymR-2f-BIG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
